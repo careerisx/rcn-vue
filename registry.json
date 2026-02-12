@@ -215,14 +215,13 @@
         "tooltip",
         "textarea",
         "number-field",
-        "https://careerisx.github.io/rcn-vue/r/select.json",
+        "https://careerisx.github.io/rcn-vue/r/selector.json",
         "https://careerisx.github.io/rcn-vue/r/date-picker.json"
       ],
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/form/Form.vue",
-          "target": "src/components/registry/rcn/form/Form.vue"
+          "path": "src/components/registry/rcn/form/Form.vue"
         }
       ]
     },
