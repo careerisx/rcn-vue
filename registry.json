@@ -17,7 +17,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "rcn/r-button/RButton.vue"
+          "path": "registry/rcn/r-button/RButton.vue"
         }
       ]
     }
