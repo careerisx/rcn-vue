@@ -74,7 +74,7 @@
         "select",
         "skeleton",
         "button",
-        "https://careerisx.github.io/rcn-vue/empty.json"
+        "https://careerisx.github.io/rcn-vue/r/empty.json"
       ],
       "files": [
         {
@@ -206,8 +206,8 @@
         "tooltip",
         "textarea",
         "number-field",
-        "https://careerisx.github.io/rcn-vue/select.json",
-        "https://careerisx.github.io/rcn-vue/date-picker.json"
+        "https://careerisx.github.io/rcn-vue/r/select.json",
+        "https://careerisx.github.io/rcn-vue/r/date-picker.json"
       ],
       "files": [
         {
