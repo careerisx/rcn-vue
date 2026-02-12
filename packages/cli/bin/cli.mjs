@@ -15,9 +15,7 @@
 
 import { execSync } from 'node:child_process'
 
-// ⚠️ 部署后请修改为你的 GitHub Pages 实际地址
-// 格式: https://<username>.github.io/<repo-name>
-const REGISTRY_BASE_URL = 'https://your-username.github.io/rcn-vue'
+const REGISTRY_BASE_URL = 'https://careerisx.github.io/rcn-vue'
 
 const args = process.argv.slice(2)
 const command = args[0]

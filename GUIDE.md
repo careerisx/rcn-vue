@@ -382,7 +382,7 @@ bunx --bun rcn-vue add r-confirm-dialog
 {
   "registryDependencies": [
     "button",
-    "https://your-username.github.io/rcn-vue/r-button.json"
+    "https://careerisx.github.io/rcn-vue/r-button.json"
   ]
 }
 ```
