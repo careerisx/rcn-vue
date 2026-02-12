@@ -79,7 +79,8 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "registry/rcn/data-table/DataTable.vue"
+          "path": "registry/rcn/data-table/DataTable.vue",
+          "target": "rcn/data-table/DataTable.vue"
         }
       ]
     },
@@ -147,6 +148,7 @@
           "type": "registry:component",
           "path": "registry/rcn/dialog/Dialog.vue"
         }
+      ]
       ]
     },
     {
