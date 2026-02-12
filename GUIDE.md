@@ -14,23 +14,24 @@ rcn-vue 使用 shadcn-vue 的 **Registry 系统**。你编写组件源码 → �
 
 ### 目录规范
 
-所有组件放在 `rcn/` 下，每个组件一个目录：
+所有组件放在 `registry/rcn/` 下，每个组件一个目录：
 
 ```
-rcn/
-└── <组件名>/            # 如: r-button
-    ├── 组件.vue          # 主组件
-    ├── 子组件.vue        # 可选：子组件
-    └── useXxx.ts        # 可选：composable
+registry/
+└── rcn/
+    └── <组件名>/            # 如: button
+        ├── 组件.vue          # 主组件
+        ├── 子组件.vue        # 可选：子组件
+        └── useXxx.ts        # 可选：composable
 ```
 
 ### 命名规范
 
 | 类别 | 规范 | 示例 |
 |------|------|------|
-| 目录名 | kebab-case，加前缀 `r-` | `r-button` |
-| 组件文件名 | PascalCase | `RButton.vue` |
-| composable 文件名 | camelCase，加 `use` 前缀 | `useRTable.ts` |
+| 目录名 | kebab-case | `button` |
+| 组件文件名 | PascalCase | `Button.vue` |
+| composable 文件名 | camelCase，加 `use` 前缀 | `useTable.ts` |
 
 ### 编写组件
 
@@ -66,11 +67,11 @@ import { Loader2 } from 'lucide-vue-next'
 ```
 registry/
 └── rcn/
-    └── r-data-table/
-        ├── RDataTable.vue              # 主组件
-        ├── RDataTablePagination.vue     # 分页子组件
-        ├── RDataTableToolbar.vue        # 工具栏子组件
-        └── useRDataTable.ts             # composable
+    └── data-table/
+        ├── DataTable.vue              # 主组件
+        ├── DataTablePagination.vue     # 分页子组件
+        ├── DataTableToolbar.vue        # 工具栏子组件
+        └── useDataTable.ts             # composable
 ```
 
 子组件之间的引用使用**相对路径**：
@@ -93,15 +94,15 @@ import { useRDataTable } from './useRDataTable'
 
 ```json
 {
-  "name": "r-button",
+  "name": "button",
   "type": "registry:block",
-  "title": "RButton",
+  "title": "Button",
   "description": "基于 shadcn-vue Button 的增强按钮组件，支持 loading 状态",
   "dependencies": ["lucide-vue-next"],
   "registryDependencies": ["button"],
   "files": [
     {
-      "path": "registry/rcn/r-button/RButton.vue",
+      "path": "registry/rcn/button/Button.vue",
       "type": "registry:component"
     }
   ]
@@ -135,27 +136,27 @@ import { useRDataTable } from './useRDataTable'
 
 ```json
 {
-  "name": "r-data-table",
+  "name": "data-table",
   "type": "registry:block",
-  "title": "R Data Table",
+  "title": "Data Table",
   "description": "增强数据表格，支持分页、排序、筛选",
   "dependencies": ["@tanstack/vue-table"],
   "registryDependencies": ["table", "button", "input", "select"],
   "files": [
     {
-      "path": "registry/rcn/r-data-table/RDataTable.vue",
+      "path": "registry/rcn/data-table/DataTable.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/rcn/r-data-table/RDataTablePagination.vue",
+      "path": "registry/rcn/data-table/DataTablePagination.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/rcn/r-data-table/RDataTableToolbar.vue",
+      "path": "registry/rcn/data-table/DataTableToolbar.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/rcn/r-data-table/useRDataTable.ts",
+      "path": "registry/rcn/data-table/useDataTable.ts",
       "type": "registry:hook"
     }
   ]
@@ -168,7 +169,7 @@ import { useRDataTable } from './useRDataTable'
 
 ```json
 {
-  "name": "r-theme-card",
+  "name": "theme-card",
   "type": "registry:block",
   "title": "R Theme Card",
   "description": "带品牌主题色的卡片组件",
@@ -185,7 +186,7 @@ import { useRDataTable } from './useRDataTable'
   },
   "files": [
     {
-      "path": "registry/rcn/r-theme-card/RThemeCard.vue",
+      "path": "registry/rcn/theme-card/ThemeCard.vue",
       "type": "registry:component"
     }
   ]
@@ -206,8 +207,8 @@ pnpm registry:build
 
 ```
 public/r/
-├── r-button.json
-├── r-data-table.json
+├── button.json
+├── data-table.json
 └── registry.json
 ```
 
@@ -220,7 +221,7 @@ public/r/
 pnpm dev
 
 # 在另一个项目中测试安装（假设 dev server 在 5173 端口）
-pnpm dlx @lwenh/rcn add r-button
+pnpm dlx @lwenh/rcn add button
 ```
 
 ---
@@ -252,7 +253,7 @@ pnpm dlx shadcn-vue@latest add dialog button
 ### 2. 创建组件文件
 
 ```
-registry/rcn/r-confirm-dialog/RConfirmDialog.vue
+registry/rcn/confirm-dialog/ConfirmDialog.vue
 ```
 
 ```vue
@@ -330,14 +331,14 @@ function handleCancel() {
 
 ```json
 {
-  "name": "r-confirm-dialog",
+  "name": "confirm-dialog",
   "type": "registry:block",
   "title": "R Confirm Dialog",
   "description": "确认对话框组件，支持普通和危险操作两种模式",
   "registryDependencies": ["dialog", "button"],
   "files": [
     {
-      "path": "registry/rcn/r-confirm-dialog/RConfirmDialog.vue",
+      "path": "registry/rcn/confirm-dialog/ConfirmDialog.vue",
       "type": "registry:component"
     }
   ]
@@ -354,7 +355,7 @@ pnpm registry:build
 
 ```bash
 git add .
-git commit -m "feat: add r-confirm-dialog component"
+git commit -m "feat: add confirm-dialog component"
 git push origin main
 ```
 
@@ -362,11 +363,11 @@ GitHub Actions 自动部署后，其他项目即可安装：
 
 ```bash
 # pnpm
-pnpm dlx @lwenh/rcn add r-confirm-dialog
+pnpm dlx @lwenh/rcn add confirm-dialog
 # npm
-npx @lwenh/rcn add r-confirm-dialog
+npx @lwenh/rcn add confirm-dialog
 # bun
-bunx --bun @lwenh/rcn add r-confirm-dialog
+bunx --bun @lwenh/rcn add confirm-dialog
 ```
 
 ---
@@ -381,7 +382,7 @@ bunx --bun @lwenh/rcn add r-confirm-dialog
 {
   "registryDependencies": [
     "button",
-    "https://careerisx.github.io/rcn-vue/r-button.json"
+    "https://careerisx.github.io/rcn-vue/button.json"
   ]
 }
 ```

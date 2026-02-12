@@ -8,8 +8,8 @@
  *   npx @lwenh/rcn list
  *
  * 示例:
- *   npx @lwenh/rcn add r-button
- *   npx @lwenh/rcn add r-button r-data-table
+ *   npx @lwenh/rcn add button
+ *   npx @lwenh/rcn add button data-table
  *   npx @lwenh/rcn list
  */
 
@@ -30,8 +30,8 @@ function printHelp() {
     npx @lwenh/rcn help                              显示帮助信息
 
   示例:
-    npx @lwenh/rcn add r-button
-    npx @lwenh/rcn add r-button r-data-table
+    npx @lwenh/rcn add button
+    npx @lwenh/rcn add button data-table
   `)
 }
 
