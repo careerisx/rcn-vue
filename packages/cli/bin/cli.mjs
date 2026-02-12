@@ -9,7 +9,7 @@
  *
  * 示例:
  *   npx @lwenh/rcn add button
- *   npx @lwenh/rcn add button data-table
+ *   npx @lwenh/rcn add button table
  *   npx @lwenh/rcn list
  */
 
@@ -31,7 +31,7 @@ function printHelp() {
 
   示例:
     npx @lwenh/rcn add button
-    npx @lwenh/rcn add button data-table
+    npx @lwenh/rcn add button table
   `)
 }
 

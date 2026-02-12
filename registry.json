@@ -59,9 +59,9 @@
       ]
     },
     {
-      "name": "data-table",
+      "name": "table",
       "type": "registry:block",
-      "title": "Data Table",
+      "title": "Table",
       "description": "基于 TanStack Table 的数据表格组件，支持分页、排序和筛选功能",
       "author": "Rui Li",
       "dependencies": [
@@ -79,7 +79,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/data-table/DataTable.vue"
+          "path": "src/components/registry/rcn/table/Table.vue"
         }
       ]
     },

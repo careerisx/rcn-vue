@@ -9,7 +9,7 @@
 | `button` | 增强按钮，支持 loading 状态 |
 | `card` | 增强卡片，支持插槽自定义 |
 | `confirm` | 确认对话框 |
-| `data-table` | 数据表格，基于 TanStack Table，支持分页/排序/筛选 |
+| `table` | 数据表格，基于 TanStack Table，支持分页/排序/筛选 |
 | `date-picker` | 日期选择器 |
 | `date-range-picker` | 日期范围选择器 |
 | `dialog` | 对话框，支持插槽自定义 |
@@ -37,7 +37,7 @@ npx @lwenh/rcn add button
 bunx --bun @lwenh/rcn add button
 
 # 安装多个
-pnpm dlx @lwenh/rcn add button data-table dialog
+pnpm dlx @lwenh/rcn add button table dialog
 
 # 查看可用组件
 pnpm dlx @lwenh/rcn list
@@ -84,7 +84,7 @@ pnpm registry:build
 │   ├── button/Button.vue
 │   ├── card/Card.vue
 │   ├── confirm/Confirm.vue
-│   ├── data-table/DataTable.vue
+│   ├── table/DataTable.vue
 │   ├── ...
 │   └── sheet/Sheet.vue
 ├── public/r/                                    # build 输出（自动生成）
