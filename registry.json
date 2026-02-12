@@ -4,10 +4,9 @@
   "homepage": "https://github.com/careerisx/rcn-vue",
   "items": [
     {
-      "$schema": "https://shadcn-vue.com/schema/registry-item.json",
-      "name": "r-button",
+      "name": "button",
       "type": "registry:block",
-      "title": "R Button",
+      "title": "Button",
       "description": "基于 shadcn-vue Button 的增强按钮组件，支持 loading 状态",
       "author": "Rui Li",
       "dependencies": [
@@ -19,7 +18,258 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "registry/rcn/r-button/RButton.vue"
+          "path": "registry/rcn/button/Button.vue"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:block",
+      "title": "Card",
+      "description": "基于 shadcn-vue Card 的增强，支持插槽自定义内容",
+      "author": "Rui Li",
+      "dependencies": [
+      ],
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/card/Card.vue"
+        }
+      ]
+    },
+    {
+      "name": "confirm",
+      "type": "registry:block",
+      "title": "Confirm",
+      "description": "支持插槽自定义内容的确认组件",
+      "author": "Rui Li",
+      "dependencies": [
+      ],
+      "registryDependencies": [
+        "alert-dialog"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/confirm/Confirm.vue"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "registry:block",
+      "title": "Data Table",
+      "description": "基于 TanStack Table 的数据表格组件，支持分页、排序和筛选功能",
+      "author": "Rui Li",
+      "dependencies": [
+        "@tanstack/vue-table"
+      ],
+      "registryDependencies": [
+        "table",
+        "checkbox",
+        "pagination",
+        "select",
+        "skeleton",
+        "button",
+        "https://careerisx.github.io/rcn-vue/empty.json"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/data-table/DataTable.vue"
+        }
+      ]
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:block",
+      "title": "Date Picker",
+      "description": "用于选择日期的组件",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next",
+        "@internationalized/date"
+      ],
+      "registryDependencies": [
+        "calendar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/date-picker/DatePicker.vue"
+        }
+      ]
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:block",
+      "title": "Date Range Picker",
+      "description": "用于选择日期范围的组件",
+      "author": "Rui Li",
+      "dependencies": [
+        "reka-ui",
+        "lucide-vue-next",
+        "@internationalized/date"
+      ],
+      "registryDependencies": [
+        "range-calendar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/date-range-picker/DateRangePicker.vue"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:block",
+      "title": "Dialog",
+      "description": "用于显示对话框的组件，支持插槽自定义内容",
+      "author": "Rui Li",
+      "dependencies": [
+      ],
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/dialog/Dialog.vue"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:block",
+      "title": "Dropdown Menu",
+      "description": "用于显示下拉菜单的组件，支持插槽自定义内容",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next"
+      ],
+      "registryDependencies": [
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/dropdown-menu/DropdownMenu.vue"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:block",
+      "title": "Empty",
+      "description": "用于显示空状态的组件",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next"
+      ],
+      "registryDependencies": [
+        "empty",
+        "button"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/empty/Empty.vue"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:block",
+      "title": "Form",
+      "description": "用于显示表单的组件，支持插槽自定义内容",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next",
+        "vee-validate"
+      ],
+      "registryDependencies": [
+        "spinner",
+        "button",
+        "input",
+        "form",
+        "tooltip",
+        "textarea",
+        "number-field",
+        "https://careerisx.github.io/rcn-vue/select.json",
+        "https://careerisx.github.io/rcn-vue/date-picker.json"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/form/Form.vue"
+        }
+      ]
+    },
+    {
+      "name": "title",
+      "type": "registry:block",
+      "title": "Title",
+      "description": "自定义标题样式",
+      "author": "Rui Li",
+      "dependencies": [
+      ],
+      "registryDependencies": [
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/title/Title.vue"
+        }
+      ]
+    },
+    {
+      "name": "selector",
+      "type": "registry:block",
+      "title": "Selector",
+      "description": "用于选择项的组件，支持单选和多选模式",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next"
+      ],
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/selector/Selector.vue"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:block",
+      "title": "Sheet",
+      "description": "用于显示底部弹出层的组件，支持插槽自定义内容",
+      "author": "Rui Li",
+      "dependencies": [
+        "lucide-vue-next"
+      ],
+      "registryDependencies": [
+        "button",
+        "sheet",
+        "spinner"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "registry/rcn/sheet/Sheet.vue"
         }
       ]
     }
