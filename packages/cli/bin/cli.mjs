@@ -15,7 +15,7 @@
 
 import { execSync } from 'node:child_process'
 
-const REGISTRY_BASE_URL = 'https://careerisx.github.io/rcn-vue'
+const REGISTRY_BASE_URL = 'https://careerisx.github.io/rcn-vue/r'
 
 const args = process.argv.slice(2)
 const command = args[0]

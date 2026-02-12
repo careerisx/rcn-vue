@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/deploy.yml'
       - 'registry/**'
       - 'registry.json'
   workflow_dispatch:
@@ -47,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public/r
+          path: ./public
 
   deploy:
     environment:
