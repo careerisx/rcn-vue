@@ -14,15 +14,14 @@ rcn-vue 使用 shadcn-vue 的 **Registry 系统**。你编写组件源码 → �
 
 ### 目录规范
 
-所有组件放在 `registry/new-york/` 下，每个组件一个目录：
+所有组件放在 `rcn/` 下，每个组件一个目录：
 
 ```
-registry/
-└── new-york/
-    └── <组件名>/            # 如: r-button
-        ├── 组件.vue          # 主组件
-        ├── 子组件.vue        # 可选：子组件
-        └── useXxx.ts        # 可选：composable
+rcn/
+└── <组件名>/            # 如: r-button
+    ├── 组件.vue          # 主组件
+    ├── 子组件.vue        # 可选：子组件
+    └── useXxx.ts        # 可选：composable
 ```
 
 ### 命名规范
@@ -102,7 +101,7 @@ import { useRDataTable } from './useRDataTable'
   "registryDependencies": ["button"],
   "files": [
     {
-      "path": "registry/new-york/r-button/RButton.vue",
+      "path": "rcn/r-button/RButton.vue",
       "type": "registry:component"
     }
   ]
@@ -144,19 +143,19 @@ import { useRDataTable } from './useRDataTable'
   "registryDependencies": ["table", "button", "input", "select"],
   "files": [
     {
-      "path": "registry/new-york/r-data-table/RDataTable.vue",
+      "path": "rcn/r-data-table/RDataTable.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/new-york/r-data-table/RDataTablePagination.vue",
+      "path": "rcn/r-data-table/RDataTablePagination.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/new-york/r-data-table/RDataTableToolbar.vue",
+      "path": "rcn/r-data-table/RDataTableToolbar.vue",
       "type": "registry:component"
     },
     {
-      "path": "registry/new-york/r-data-table/useRDataTable.ts",
+      "path": "rcn/r-data-table/useRDataTable.ts",
       "type": "registry:hook"
     }
   ]
@@ -186,7 +185,7 @@ import { useRDataTable } from './useRDataTable'
   },
   "files": [
     {
-      "path": "registry/new-york/r-theme-card/RThemeCard.vue",
+      "path": "rcn/r-theme-card/RThemeCard.vue",
       "type": "registry:component"
     }
   ]
@@ -253,7 +252,7 @@ pnpm dlx shadcn-vue@latest add dialog button
 ### 2. 创建组件文件
 
 ```
-registry/new-york/r-confirm-dialog/RConfirmDialog.vue
+rcn/r-confirm-dialog/RConfirmDialog.vue
 ```
 
 ```vue
@@ -338,7 +337,7 @@ function handleCancel() {
   "registryDependencies": ["dialog", "button"],
   "files": [
     {
-      "path": "registry/new-york/r-confirm-dialog/RConfirmDialog.vue",
+      "path": "rcn/r-confirm-dialog/RConfirmDialog.vue",
       "type": "registry:component"
     }
   ]
