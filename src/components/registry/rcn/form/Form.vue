@@ -17,8 +17,8 @@ import {
   NumberFieldIncrement,
   NumberFieldInput,
 } from '@/components/ui/number-field';
-import Selector, {type SelectOption} from '../selector/Selector.vue';
-import DatePicker from '../date-picker/DatePicker.vue';
+import Selector, {type SelectOption} from '@/components/registry/rcn/selector/Selector.vue';
+import DatePicker from '@/components/registry/rcn/date-picker/DatePicker.vue';
 
 /**
  * 表单字段配置项
@@ -215,7 +215,7 @@ const onSubmit = form.handleSubmit((values: T) => {
     // 合并 modelValue 中的非表单字段和表单提交的值
     // 这样可以保留 modelValue 中存在但表单中没有定义的字段（如 id、projectId 等）
     const mergedValues = props.modelValue
-        ? { ...props.modelValue, ...values }
+        ? {...props.modelValue, ...values}
         : values;
 
     // 更新 v-model 和触发 submit 事件
@@ -310,7 +310,7 @@ watch(
         form.setValues(newValue as any);
       }
     },
-    {deep: true}
+    {deep: true},
 );
 
 // 监听表单值的变化，更新 modelValue（实现双向绑定）
@@ -319,10 +319,10 @@ watch(
     (newValues) => {
       if (props.modelValue) {
         // 合并原有的 modelValue 和新的表单值
-        emit('update:modelValue', { ...props.modelValue, ...newValues } as T);
+        emit('update:modelValue', {...props.modelValue, ...newValues} as T);
       }
     },
-    { deep: true }
+    {deep: true},
 );
 
 // 向子组件提供 form 实例

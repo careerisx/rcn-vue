@@ -33,7 +33,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import Empty, {type EmptyProps} from '../empty/Empty.vue';
+import Empty, {type EmptyProps} from '@/components/registry/rcn/empty/Empty.vue';
 import {Skeleton} from '@/components/ui/skeleton';
 import type {AcceptableValue} from 'reka-ui';
 import {cn} from '@/lib/utils';
