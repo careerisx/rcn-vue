@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'src/components/rcn/**'
+      - 'rcn/**'
       - 'registry.json'
   workflow_dispatch:
 
