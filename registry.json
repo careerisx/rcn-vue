@@ -18,8 +18,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/button/Button.vue",
-          "target": "src/components/registry/rcn/button/Button.vue"
+          "path": "src/components/registry/rcn/button/Button.vue"
         }
       ]
     },
@@ -37,8 +36,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/card/Card.vue",
-          "target": "src/components/registry/rcn/card/Card.vue"
+          "path": "src/components/registry/rcn/card/Card.vue"
         }
       ]
     },
@@ -56,8 +54,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/confirm/Confirm.vue",
-          "target": "src/components/registry/rcn/confirm/Confirm.vue"
+          "path": "src/components/registry/rcn/confirm/Confirm.vue"
         }
       ]
     },
@@ -82,8 +79,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/data-table/DataTable.vue",
-          "target": "src/components/registry/rcn/data-table/DataTable.vue"
+          "path": "src/components/registry/rcn/data-table/DataTable.vue"
         }
       ]
     },
@@ -106,8 +102,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/date-picker/DatePicker.vue",
-          "target": "src/components/registry/rcn/date-picker/DatePicker.vue"
+          "path": "src/components/registry/rcn/date-picker/DatePicker.vue"
         }
       ]
     },
@@ -131,8 +126,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/date-range-picker/DateRangePicker.vue",
-          "target": "src/components/registry/rcn/date-range-picker/DateRangePicker.vue"
+          "path": "src/components/registry/rcn/date-range-picker/DateRangePicker.vue"
         }
       ]
     },
@@ -151,8 +145,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/dialog/Dialog.vue",
-          "target": "src/components/registry/rcn/dialog/Dialog.vue"
+          "path": "src/components/registry/rcn/dialog/Dialog.vue"
         }
       ]
     },
@@ -171,8 +164,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/dropdown-menu/DropdownMenu.vue",
-          "target": "src/components/registry/rcn/dropdown-menu/DropdownMenu.vue"
+          "path": "src/components/registry/rcn/dropdown-menu/DropdownMenu.vue"
         }
       ]
     },
@@ -192,8 +184,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/empty/Empty.vue",
-          "target": "src/components/registry/rcn/empty/Empty.vue"
+          "path": "src/components/registry/rcn/empty/Empty.vue"
         }
       ]
     },
@@ -238,8 +229,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/title/Title.vue",
-          "target": "src/components/registry/rcn/title/Title.vue"
+          "path": "src/components/registry/rcn/title/Title.vue"
         }
       ]
     },
@@ -258,8 +248,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/selector/Selector.vue",
-          "target": "src/components/registry/rcn/selector/Selector.vue"
+          "path": "src/components/registry/rcn/selector/Selector.vue"
         }
       ]
     },
@@ -280,8 +269,7 @@
       "files": [
         {
           "type": "registry:component",
-          "path": "src/components/registry/rcn/sheet/Sheet.vue",
-          "target": "src/components/registry/rcn/sheet/Sheet.vue"
+          "path": "src/components/registry/rcn/sheet/Sheet.vue"
         }
       ]
     }
