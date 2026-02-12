@@ -65,7 +65,7 @@ import { Loader2 } from 'lucide-vue-next'
 
 ```
 registry/
-└── new-york/
+└── rcn/
     └── r-data-table/
         ├── RDataTable.vue              # 主组件
         ├── RDataTablePagination.vue     # 分页子组件
@@ -101,7 +101,7 @@ import { useRDataTable } from './useRDataTable'
   "registryDependencies": ["button"],
   "files": [
     {
-      "path": "rcn/r-button/RButton.vue",
+      "path": "registry/rcn/r-button/RButton.vue",
       "type": "registry:component"
     }
   ]
@@ -143,19 +143,19 @@ import { useRDataTable } from './useRDataTable'
   "registryDependencies": ["table", "button", "input", "select"],
   "files": [
     {
-      "path": "rcn/r-data-table/RDataTable.vue",
+      "path": "registry/rcn/r-data-table/RDataTable.vue",
       "type": "registry:component"
     },
     {
-      "path": "rcn/r-data-table/RDataTablePagination.vue",
+      "path": "registry/rcn/r-data-table/RDataTablePagination.vue",
       "type": "registry:component"
     },
     {
-      "path": "rcn/r-data-table/RDataTableToolbar.vue",
+      "path": "registry/rcn/r-data-table/RDataTableToolbar.vue",
       "type": "registry:component"
     },
     {
-      "path": "rcn/r-data-table/useRDataTable.ts",
+      "path": "registry/rcn/r-data-table/useRDataTable.ts",
       "type": "registry:hook"
     }
   ]
@@ -185,7 +185,7 @@ import { useRDataTable } from './useRDataTable'
   },
   "files": [
     {
-      "path": "rcn/r-theme-card/RThemeCard.vue",
+      "path": "registry/rcn/r-theme-card/RThemeCard.vue",
       "type": "registry:component"
     }
   ]
@@ -220,7 +220,7 @@ public/r/
 pnpm dev
 
 # 在另一个项目中测试安装（假设 dev server 在 5173 端口）
-pnpm dlx rcn-vue@latest add r-button
+pnpm dlx @lwenh/rcn add r-button
 ```
 
 ---
@@ -252,7 +252,7 @@ pnpm dlx shadcn-vue@latest add dialog button
 ### 2. 创建组件文件
 
 ```
-rcn/r-confirm-dialog/RConfirmDialog.vue
+registry/rcn/r-confirm-dialog/RConfirmDialog.vue
 ```
 
 ```vue
@@ -337,7 +337,7 @@ function handleCancel() {
   "registryDependencies": ["dialog", "button"],
   "files": [
     {
-      "path": "rcn/r-confirm-dialog/RConfirmDialog.vue",
+      "path": "registry/rcn/r-confirm-dialog/RConfirmDialog.vue",
       "type": "registry:component"
     }
   ]
@@ -362,11 +362,11 @@ GitHub Actions 自动部署后，其他项目即可安装：
 
 ```bash
 # pnpm
-pnpm dlx rcn-vue add r-confirm-dialog
+pnpm dlx @lwenh/rcn add r-confirm-dialog
 # npm
-npx rcn-vue add r-confirm-dialog
+npx @lwenh/rcn add r-confirm-dialog
 # bun
-bunx --bun rcn-vue add r-confirm-dialog
+bunx --bun @lwenh/rcn add r-confirm-dialog
 ```
 
 ---

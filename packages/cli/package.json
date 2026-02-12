@@ -1,10 +1,13 @@
 {
-  "name": "rcn-vue",
+  "name": "@lwenh/rcn",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "CLI for installing rcn-vue registry components",
   "type": "module",
   "bin": {
-    "rcn-vue": "./bin/cli.mjs"
+    "rcn": "./bin/cli.mjs"
   },
   "files": [
     "bin"

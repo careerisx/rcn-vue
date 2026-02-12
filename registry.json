@@ -4,10 +4,12 @@
   "homepage": "https://github.com/careerisx/rcn-vue",
   "items": [
     {
+      "$schema": "https://shadcn-vue.com/schema/registry-item.json",
       "name": "r-button",
       "type": "registry:block",
       "title": "R Button",
       "description": "基于 shadcn-vue Button 的增强按钮组件，支持 loading 状态",
+      "author": "Rui Li",
       "dependencies": [
         "lucide-vue-next"
       ],
@@ -16,8 +18,8 @@
       ],
       "files": [
         {
-          "type": "registry:ui",
-          "path": "rcn/r-button/RButton.vue"
+          "type": "registry:component",
+          "path": "registry/rcn/r-button/RButton.vue"
         }
       ]
     }

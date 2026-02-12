@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * rcn-vue CLI
+ * @lwenh/rcn CLI
  *
  * 用法:
- *   npx rcn-vue add <component-name> [component-name...]
- *   npx rcn-vue list
+ *   npx @lwenh/rcn add <component-name> [component-name...]
+ *   npx @lwenh/rcn list
  *
  * 示例:
- *   npx rcn-vue add r-button
- *   npx rcn-vue add r-button r-data-table
- *   npx rcn-vue list
+ *   npx @lwenh/rcn add r-button
+ *   npx @lwenh/rcn add r-button r-data-table
+ *   npx @lwenh/rcn list
  */
 
 import { execSync } from 'node:child_process'
@@ -22,16 +22,16 @@ const command = args[0]
 
 function printHelp() {
     console.log(`
-  rcn-vue CLI - 自定义组件注册表
+  @lwenh/rcn CLI - 自定义组件注册表
 
   用法:
-    npx rcn-vue add <component> [component...]   安装组件到当前项目
-    npx rcn-vue list                              列出所有可用组件
-    npx rcn-vue help                              显示帮助信息
+    npx @lwenh/rcn add <component> [component...]   安装组件到当前项目
+    npx @lwenh/rcn list                              列出所有可用组件
+    npx @lwenh/rcn help                              显示帮助信息
 
   示例:
-    npx rcn-vue add rcn-button
-    npx rcn-vue add rcn-button rcn-data-table
+    npx @lwenh/rcn add r-button
+    npx @lwenh/rcn add r-button r-data-table
   `)
 }
 
@@ -57,7 +57,7 @@ async function listComponents() {
 function addComponents(components) {
     if (components.length === 0) {
         console.error('❌ 请指定要安装的组件名称')
-        console.error('   用法: npx rcn-vue add <component-name>')
+        console.error('   用法: npx @lwenh/rcn add <component-name>')
         process.exit(1)
     }
 

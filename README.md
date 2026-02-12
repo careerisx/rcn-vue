@@ -6,24 +6,24 @@
 
 ```bash
 # pnpm
-pnpm dlx rcn-vue add r-button
+pnpm dlx @lwenh/rcn add r-button
 
 # npm
-npx rcn-vue add r-button
+npx @lwenh/rcn add r-button
 
 # yarn
-npx rcn-vue add r-button
+npx @lwenh/rcn add r-button
 
 # bun
-bunx --bun rcn-vue add r-button
+bunx --bun @lwenh/rcn add r-button
 ```
 
 查看所有可用组件：
 
 ```bash
-pnpm dlx rcn-vue list
+pnpm dlx @lwenh/rcn list
 # 或
-npx rcn-vue list
+npx @lwenh/rcn list
 ```
 
 ## 开发
@@ -47,11 +47,11 @@ pnpm registry:build
 
 ```
 ├── registry.json                    # 注册表定义（所有组件的元数据）
-├── rcn/
+├── registry/rcn/
 │   └── r-button/                    # 组件源码目录
 │       └── RButton.vue
 ├── public/r/                        # build 生成的 JSON（部署到 GitHub Pages）
-├── packages/cli/                    # rcn-vue CLI 包装工具
+├── packages/cli/                    # @lwenh/rcn CLI 包装工具
 ├── .github/workflows/deploy.yml     # GitHub Pages 自动部署
 └── src/                             # 本地开发/预览用
 ```
