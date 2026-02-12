@@ -3,6 +3,9 @@ name: Deploy Registry to GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - 'rcn/**'
+      - 'registry.json'
   workflow_dispatch:
 
 permissions:
