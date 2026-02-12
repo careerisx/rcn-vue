@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/deploy.yml'
-      - 'registry/**'
+      - 'src/components/registry/**'
       - 'registry.json'
   workflow_dispatch:
 
