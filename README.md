@@ -47,10 +47,9 @@ pnpm registry:build
 
 ```
 ├── registry.json                    # 注册表定义（所有组件的元数据）
-├── registry/
-│   └── new-york/                    # 组件源码目录
-│       └── r-button/
-│           └── RButton.vue
+├── rcn/
+│   └── r-button/                    # 组件源码目录
+│       └── RButton.vue
 ├── public/r/                        # build 生成的 JSON（部署到 GitHub Pages）
 ├── packages/cli/                    # rcn-vue CLI 包装工具
 ├── .github/workflows/deploy.yml     # GitHub Pages 自动部署
