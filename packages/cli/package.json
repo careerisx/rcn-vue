@@ -1,0 +1,20 @@
+{
+  "name": "rcn-vue",
+  "version": "0.1.0",
+  "description": "CLI for installing rcn-vue registry components",
+  "type": "module",
+  "bin": {
+    "rcn-vue": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "rcn-vue",
+    "shadcn-vue",
+    "vue",
+    "components",
+    "registry"
+  ],
+  "license": "MIT"
+}

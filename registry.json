@@ -1,0 +1,25 @@
+{
+  "$schema": "https://shadcn-vue.com/schema/registry.json",
+  "name": "rcn-vue",
+  "homepage": "https://github.com/your-username/rcn-vue",
+  "items": [
+    {
+      "name": "r-button",
+      "type": "registry:block",
+      "title": "R Button",
+      "description": "基于 shadcn-vue Button 的增强按钮组件，支持 loading 状态",
+      "dependencies": [
+        "lucide-vue-next"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/r-button/RButton.vue",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
