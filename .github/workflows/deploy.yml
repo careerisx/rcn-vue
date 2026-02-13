@@ -1,12 +1,14 @@
-name: Deploy Registry to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/deploy.yml'
-      - 'src/components/registry/**'
+      - 'src/**'
       - 'registry.json'
+      - 'package.json'
+      - 'vite.config.ts'
   workflow_dispatch:
 
 permissions:
@@ -40,7 +42,10 @@ jobs:
         run: pnpm install
 
       - name: Build registry
-        run: pnpm registry:build
+        run: pnpm run registry:build
+
+      - name: Build demo site
+        run: pnpm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -48,7 +53,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./dist
 
   deploy:
     environment:

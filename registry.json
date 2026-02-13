@@ -4,6 +4,23 @@
   "homepage": "https://github.com/careerisx/rcn-vue",
   "items": [
     {
+      "name": "avatar",
+      "type": "registry:block",
+      "title": "Avatar",
+      "description": "增强头像组件，支持多种尺寸和形状",
+      "author": "Rui Li",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/components/registry/rcn/avatar/Avatar.vue"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:block",
       "title": "Button",
@@ -28,8 +45,7 @@
       "title": "Card",
       "description": "基于 shadcn-vue Card 的增强，支持插槽自定义内容",
       "author": "Rui Li",
-      "dependencies": [
-      ],
+      "dependencies": [],
       "registryDependencies": [
         "card"
       ],
@@ -46,8 +62,7 @@
       "title": "Confirm",
       "description": "支持插槽自定义内容的确认组件",
       "author": "Rui Li",
-      "dependencies": [
-      ],
+      "dependencies": [],
       "registryDependencies": [
         "alert-dialog"
       ],
@@ -136,8 +151,7 @@
       "title": "Dialog",
       "description": "用于显示对话框的组件，支持插槽自定义内容",
       "author": "Rui Li",
-      "dependencies": [
-      ],
+      "dependencies": [],
       "registryDependencies": [
         "dialog",
         "button"
@@ -222,10 +236,8 @@
       "title": "Title",
       "description": "自定义标题样式",
       "author": "Rui Li",
-      "dependencies": [
-      ],
-      "registryDependencies": [
-      ],
+      "dependencies": [],
+      "registryDependencies": [],
       "files": [
         {
           "type": "registry:component",

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>rcn-vue</title>
+  <script>
+    // SPA fallback for GitHub Pages
+    var path = window.location.pathname
+    var repo = '/rcn-vue'
+    if (path.startsWith(repo) && path !== repo + '/' && path !== repo) {
+      var redirect = repo + '/?redirect=' + encodeURIComponent(path.replace(repo, ''))
+      window.location.replace(redirect)
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

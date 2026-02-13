@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 
-export interface MCardProps {
+export interface CardProps {
   /**
    * 额外的 CSS 类
    */
@@ -39,7 +39,7 @@ export interface MCardProps {
   showFooter?: boolean;
 }
 
-const props = withDefaults(defineProps<MCardProps>(), {
+const props = withDefaults(defineProps<CardProps>(), {
   title: '',
   description: '',
   showHeader: true,

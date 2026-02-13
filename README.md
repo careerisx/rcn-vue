@@ -2,6 +2,8 @@
 
 基于 [shadcn-vue](https://www.shadcn-vue.com) 的自定义组件注册表，封装常用业务组件，通过 CLI 一键安装到项目中。
 
+📖 **[在线文档](https://careerisx.github.io/rcn-vue/)**
+
 ## 可用组件
 
 | 组件 | 说明 |
@@ -19,12 +21,13 @@
 | `selector` | 选择器，支持单选/多选 |
 | `sheet` | 底部弹出层 |
 | `title` | 自定义标题样式 |
+| `avatar` | 头像组件 |
 
 ## 安装组件
 
 目标项目需先初始化 shadcn-vue（有 `components.json` 即可）。
 
-### 使用 @lwenh/rcn CLI
+### 使用 @lwenh/rcn CLI（推荐）
 
 ```bash
 # pnpm
@@ -69,25 +72,30 @@ src/components/registry/rcn/button/Button.vue
 # 安装依赖
 pnpm install
 
-# 启动开发服务器
+# 启动开发服务器（组件文档）
 pnpm dev
 
 # 构建 registry
 pnpm registry:build
+
+# 构建文档站点
+pnpm build
 ```
 
 ## 项目结构
 
 ```
 ├── registry.json                                # 组件注册表
-├── src/components/registry/rcn/                 # 组件源码
-│   ├── button/Button.vue
-│   ├── card/Card.vue
-│   ├── confirm/Confirm.vue
-│   ├── table/DataTable.vue
-│   ├── ...
-│   └── sheet/Sheet.vue
-├── public/r/                                    # build 输出（自动生成）
+├── src/
+│   ├── components/registry/rcn/                 # 组件源码
+│   │   ├── button/Button.vue
+│   │   ├── card/Card.vue
+│   │   ├── table/Table.vue
+│   │   └── ...
+│   ├── demos/                                   # 组件文档页面
+│   ├── pages/                                   # 介绍和安装页面
+│   └── components/demo/                         # 文档辅助组件
+├── public/r/                                    # registry build 输出（自动生成）
 ├── packages/cli/                                # @lwenh/rcn CLI
 ├── .github/workflows/deploy.yml                 # 自动部署到 GitHub Pages
 └── src/components/ui/                           # shadcn-vue 基础组件
@@ -95,6 +103,9 @@ pnpm registry:build
 
 ## 部署
 
-推送到 `main` 分支时，修改了 `src/components/registry/`、`registry.json` 或 `.github/workflows/deploy.yml` 会自动触发 GitHub Pages 部署。
+推送到 `main` 分支时会自动触发 GitHub Pages 部署，同时部署：
+
+- **组件文档站点** — `https://careerisx.github.io/rcn-vue/`
+- **Registry JSON** — `https://careerisx.github.io/rcn-vue/r/<component>.json`
 
 也可在 GitHub Actions 页面手动触发 `workflow_dispatch`。
