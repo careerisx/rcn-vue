@@ -58,7 +58,7 @@ const shapeClass = computed(() => {
 });
 
 const fallbackText = computed(() => {
-  return props.fallback.slice(0, 2).toUpperCase();
+  return props.fallback.slice(0, 1).toUpperCase();
 });
 </script>
 
