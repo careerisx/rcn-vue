@@ -31,7 +31,7 @@ const headers = {
 <template>
   <div :id="anchorId" :data-toc-id="anchorId" :data-toc-text="title" data-toc-type="api" class="space-y-3 scroll-mt-16">
     <h3 class="text-sm font-semibold text-foreground/90">{{ title }}</h3>
-    <div class="border border-border/60 rounded-xl overflow-hidden">
+    <div class="border border-border/60 rounded-xl overflow-auto">
       <table class="w-full text-[13px]">
         <thead>
         <tr class="border-b border-border/60 bg-muted/20">
