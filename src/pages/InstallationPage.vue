@@ -38,10 +38,10 @@ const steps = [
   {
     title: '安装 rcn-vue 组件（示例）',
     commands: {
-      pnpm: 'pnpm dlx shadcn-vue@latest add https://careerisx.github.io/rcn-vue/registry.json --name button',
-      npm: 'npx shadcn-vue@latest add https://careerisx.github.io/rcn-vue/registry.json --name button',
-      yarn: 'npx shadcn-vue@latest add https://careerisx.github.io/rcn-vue/registry.json --name button',
-      bun: 'bunx --bun shadcn-vue@latest add https://careerisx.github.io/rcn-vue/registry.json --name button',
+      pnpm: 'pnpm dlx @lwenh/rcn add button',
+      npm: 'npx @lwenh/rcn add button',
+      yarn: 'npx @lwenh/rcn add button',
+      bun: 'bunx --bun @lwenh/rcn add button',
     },
   },
 ]
