@@ -28,7 +28,7 @@ src/components/registry/rcn/
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { Loader2 } from 'lucide-vue-next'
+import { Loader2 } from '@lucide/vue'
 </script>
 ```
 
@@ -45,7 +45,7 @@ import { Loader2 } from 'lucide-vue-next'
   "title": "My Component",
   "description": "组件描述",
   "author": "Rui Li",
-  "dependencies": ["lucide-vue-next"],
+  "dependencies": ["@lucide/vue"],
   "registryDependencies": ["button"],
   "files": [
     {

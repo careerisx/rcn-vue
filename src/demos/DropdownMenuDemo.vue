@@ -5,7 +5,7 @@ import Button from '@/components/registry/rcn/button/Button.vue'
 import CodePreview from '@/components/demo/CodePreview.vue'
 import InstallCommand from '@/components/demo/InstallCommand.vue'
 import ApiTable, {type ApiItem} from '@/components/demo/ApiTable.vue'
-import {Edit, Copy, Trash2, Share, Download} from 'lucide-vue-next'
+import {Edit, Copy, Trash2, Share, Download} from '@lucide/vue'
 
 const selected = ref('')
 

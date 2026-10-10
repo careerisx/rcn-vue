@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue'
 import {cn} from '@/lib/utils'
-import {Code2, Eye, Copy, Check} from 'lucide-vue-next'
+import {Code2, Eye, Copy, Check} from '@lucide/vue'
 
 interface Props {
   code: string

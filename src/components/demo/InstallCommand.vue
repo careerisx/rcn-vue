@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue'
-import {Copy, Check} from 'lucide-vue-next'
+import {Copy, Check} from '@lucide/vue'
 
 interface Props {
   componentName: string

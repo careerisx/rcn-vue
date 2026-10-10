@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref} from 'vue'
-import {Copy, Check} from 'lucide-vue-next'
+import {Copy, Check} from '@lucide/vue'
 
 const managers = ['pnpm', 'npm', 'yarn', 'bun'] as const
 type PM = typeof managers[number]

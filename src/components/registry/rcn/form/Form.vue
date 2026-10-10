@@ -2,7 +2,7 @@
 import {computed, type CSSProperties, type HTMLAttributes, type MaybeRefOrGetter, provide, toValue, watch} from 'vue';
 import type {TypedSchema} from 'vee-validate';
 import {useForm} from 'vee-validate';
-import {CircleHelp} from 'lucide-vue-next';
+import {CircleHelp} from '@lucide/vue';
 import {cn} from '@/lib/utils';
 import {Button} from '@/components/ui/button';
 import {Spinner} from '@/components/ui/spinner';

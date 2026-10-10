@@ -2,7 +2,7 @@
 import {computed, ref} from 'vue';
 import type {DateValue} from '@internationalized/date';
 import {getLocalTimeZone, today, CalendarDate} from '@internationalized/date';
-import {CalendarIcon, X} from 'lucide-vue-next';
+import {CalendarIcon, X} from '@lucide/vue';
 import {cn} from '@/lib/utils';
 import {Button} from '@/components/ui/button';
 import {Calendar} from '@/components/ui/calendar';

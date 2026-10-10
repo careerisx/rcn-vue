@@ -4,7 +4,7 @@ import Button from '@/components/registry/rcn/button/Button.vue'
 import CodePreview from '@/components/demo/CodePreview.vue'
 import InstallCommand from '@/components/demo/InstallCommand.vue'
 import ApiTable, {type ApiItem} from '@/components/demo/ApiTable.vue'
-import {AlertTriangle} from 'lucide-vue-next'
+import {AlertTriangle} from '@lucide/vue'
 
 const propsItems: ApiItem[] = [
   {name: 'title', type: 'string', default: "'暂无数据'", description: '空状态标题'},

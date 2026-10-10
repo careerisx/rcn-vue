@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import {MoreHorizontal} from 'lucide-vue-next';
+import {MoreHorizontal} from '@lucide/vue';
 
 /**
  * 菜单项配置

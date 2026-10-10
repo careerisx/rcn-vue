@@ -2,7 +2,7 @@
 import {computed, ref, watch, onMounted} from 'vue'
 import {useRoute, RouterLink, RouterView} from 'vue-router'
 import {demoRoutes, guideRoutes} from './router'
-import {Sun, Moon, Github, Menu, X} from 'lucide-vue-next'
+import {Sun, Moon, Github, Menu, X} from '@lucide/vue'
 import TableOfContents from '@/components/demo/TableOfContents.vue'
 
 const route = useRoute()

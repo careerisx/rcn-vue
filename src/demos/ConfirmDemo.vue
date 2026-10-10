@@ -5,7 +5,7 @@ import CodePreview from '@/components/demo/CodePreview.vue'
 import InstallCommand from '@/components/demo/InstallCommand.vue'
 import ApiTable, {type ApiItem} from '@/components/demo/ApiTable.vue'
 import {ref} from 'vue'
-import {Trash2} from 'lucide-vue-next'
+import {Trash2} from '@lucide/vue'
 
 const result = ref('')
 

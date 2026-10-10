@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {computed} from 'vue';
-import {Inbox, RefreshCcw} from 'lucide-vue-next';
+import {Inbox, RefreshCcw} from '@lucide/vue';
 import {
   Empty,
   EmptyContent,

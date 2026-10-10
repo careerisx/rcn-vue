@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {Button} from '@/components/ui/button';
 import {cn} from '@/lib/utils';
-import {Loader2} from 'lucide-vue-next';
+import {Loader2} from '@lucide/vue';
 import {computed, type HTMLAttributes} from 'vue';
 
 interface Props {
