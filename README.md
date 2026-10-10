@@ -12,8 +12,9 @@
 | `card` | 增强卡片，支持插槽自定义 |
 | `confirm` | 确认对话框 |
 | `table` | 数据表格，基于 TanStack Table，支持分页/排序/筛选 |
+| `tree` | 树形选择，支持级联勾选、半选状态、默认展开、懒加载和节点过滤 |
 | `date-picker` | 日期选择器 |
-| `date-range-picker` | 日期范围选择器 |
+| `date-range-picker` | 日期范围选择器，支持快捷时间、时分秒选择、区间平移及移动端适配 |
 | `dialog` | 对话框，支持插槽自定义 |
 | `dropdown-menu` | 下拉菜单 |
 | `empty` | 空状态 |

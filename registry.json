@@ -27,7 +27,7 @@
       "description": "基于 shadcn-vue Button 的增强按钮组件，支持 loading 状态",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next"
+        "@lucide/vue"
       ],
       "registryDependencies": [
         "button"
@@ -105,7 +105,7 @@
       "description": "用于选择日期的组件",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next",
+        "@lucide/vue",
         "@internationalized/date"
       ],
       "registryDependencies": [
@@ -125,17 +125,17 @@
       "name": "date-range-picker",
       "type": "registry:block",
       "title": "Date Range Picker",
-      "description": "用于选择日期范围的组件",
+      "description": "日期范围选择器，支持快捷时间、时分秒选择、区间平移和移动端单月历",
       "author": "Rui Li",
       "dependencies": [
         "reka-ui",
-        "lucide-vue-next",
-        "@internationalized/date"
+        "@lucide/vue",
+        "@internationalized/date",
+        "@vueuse/core"
       ],
       "registryDependencies": [
         "range-calendar",
         "button",
-        "input",
         "popover"
       ],
       "files": [
@@ -170,7 +170,7 @@
       "description": "用于显示下拉菜单的组件，支持插槽自定义内容",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next"
+        "@lucide/vue"
       ],
       "registryDependencies": [
         "dropdown-menu"
@@ -189,7 +189,7 @@
       "description": "用于显示空状态的组件",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next"
+        "@lucide/vue"
       ],
       "registryDependencies": [
         "empty",
@@ -209,7 +209,7 @@
       "description": "用于显示表单的组件，支持插槽自定义内容",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next",
+        "@lucide/vue",
         "vee-validate"
       ],
       "registryDependencies": [
@@ -227,6 +227,39 @@
         {
           "type": "registry:component",
           "path": "src/components/registry/rcn/form/Form.vue"
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "type": "registry:block",
+      "title": "Tree",
+      "description": "树形选择组件，支持级联勾选、半选状态、默认展开、异步加载和节点过滤",
+      "author": "Rui Li",
+      "dependencies": [
+        "@lucide/vue"
+      ],
+      "registryDependencies": [
+        "checkbox",
+        "skeleton",
+        "https://careerisx.github.io/rcn-vue/r/empty.json"
+      ],
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/components/registry/rcn/tree/Tree.vue"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/components/registry/rcn/tree/TreeNode.vue"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/components/registry/rcn/tree/types.ts"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/components/registry/rcn/tree/index.ts"
         }
       ]
     },
@@ -252,7 +285,7 @@
       "description": "用于选择项的组件，支持单选和多选模式",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next"
+        "@lucide/vue"
       ],
       "registryDependencies": [
         "select"
@@ -271,7 +304,7 @@
       "description": "用于显示底部弹出层的组件，支持插槽自定义内容",
       "author": "Rui Li",
       "dependencies": [
-        "lucide-vue-next"
+        "@lucide/vue"
       ],
       "registryDependencies": [
         "button",

@@ -26,7 +26,8 @@
           <li><strong class="text-foreground">DataTable</strong> — 基于 TanStack Table，内置分页、行选择、服务端数据、Loading 骨架屏、空状态</li>
           <li><strong class="text-foreground">Form</strong> — 基于 vee-validate + zod，声明式字段配置、多列栅格、条件显隐、多种字段类型</li>
           <li><strong class="text-foreground">Confirm / Dialog / Sheet</strong> — 统一的弹出层模式，内置 trigger、header、footer 插槽</li>
-          <li><strong class="text-foreground">DatePicker / DateRangePicker</strong> — 开箱即用的日期选择，支持时间选择和清除</li>
+          <li><strong class="text-foreground">DatePicker / DateRangePicker</strong> — 开箱即用的日期选择，支持时间选择和清除；日期范围额外支持快捷时间、区间平移和移动端单月历</li>
+          <li><strong class="text-foreground">Tree</strong> — 树形选择，支持级联勾选、半选状态、默认展开、懒加载和节点过滤</li>
           <li><strong class="text-foreground">DropdownMenu</strong> — 声明式菜单配置，支持分组、图标、快捷键提示</li>
         </ul>
         <p>
