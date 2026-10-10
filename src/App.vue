@@ -2,7 +2,7 @@
 import {computed, ref, watch, onMounted} from 'vue'
 import {useRoute, RouterLink, RouterView} from 'vue-router'
 import {demoRoutes, guideRoutes} from './router'
-import {Sun, Moon, Github, Menu, X} from '@lucide/vue'
+import {Sun, Moon, CodeXml, Menu, X} from '@lucide/vue'
 import TableOfContents from '@/components/demo/TableOfContents.vue'
 
 const route = useRoute()
@@ -83,7 +83,7 @@ watch(() => route.path, () => {
               class="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
               title="GitHub"
           >
-            <Github class="w-4 h-4"/>
+            <CodeXml class="w-4 h-4"/>
           </a>
         </div>
       </div>
